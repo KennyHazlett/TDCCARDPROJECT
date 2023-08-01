@@ -1,0 +1,231 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #fff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased
+}
+
+.content_border {
+    box-shadow: 0 0 0 14px #000;
+    border-radius: 15px
+}
+
+.content_center {
+    background: #000;
+    width: 290px;
+    box-shadow: 0 0 0 10px #fff;
+    border-radius: 15px;
+    padding: 10px
+}
+
+#toggleContainer {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    font-style: italic;
+    padding-top: 15px;
+    position: relative;
+    justify-content: center
+}
+
+.toggleText {
+    margin-top: auto;
+    font-weight: 500
+}
+
+#lefttoggle {
+    margin-right: 10px;
+    color: #ff1d29
+}
+
+#righttoggle {
+    margin-left: 10px;
+    color: #5a94ff
+}
+
+.toggle {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to bottom, #eee, #fff 25px);
+    background-image: -webkit-linear-gradient(top, #eee, #fff 25px);
+    border-radius: 20px;
+    box-shadow: inset 0 -1px #fff, inset 0 1px 1px rgba(0, 0, 0, .05);
+    cursor: pointer
+}
+
+.toggle-input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0
+}
+
+.toggle-input:checked~.toggle-handle {
+    left: 40px;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, .2)
+}
+
+.toggle-label {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: block;
+    height: inherit;
+    font-size: 10px;
+    text-transform: uppercase;
+    background: #ff1d29;
+    border-radius: inherit;
+}
+
+.toggle-input:checked~.toggle-label {
+    background: #5a94ff
+}
+
+.toggle-handle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to bottom, #fff 40%, #f0f0f0);
+    background-image: -webkit-linear-gradient(top, #fff 40%, #f0f0f0);
+    border-radius: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2)
+}
+
+.content_name {
+    margin: 20px auto auto auto;
+    color: #fff;
+    text-align: -webkit-center
+}
+
+.content_title {
+    font-family: sans-serif;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 900;
+    max-width: 200px;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center
+}
+
+.content_price {
+    color: #fff;
+    max-width: 100%;
+    height: 80px;
+    font-family: sans-serif;
+    font-size: 50px;
+    line-height: 42px;
+    font-weight: 900;
+    max-width: 174px;
+    text-align: center;
+    margin: 0 auto 6px auto
+}
+
+.price_amount {
+    text-align: center;
+    line-height: 40px;
+    padding-top: 15px
+}
+
+.content_period {
+    font-family: Oswald, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -.01em;
+    text-align: center;
+    position: relative
+}
+
+.period_duration {
+    color: #939393;
+    margin-bottom: 10px
+}
+
+#multiButtons {
+    top: 20px;
+    position: relative;
+    height: 88px;
+    left: 55px
+}
+
+.btn {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 5%
+}
+
+.btn>button {
+    width: 100%;
+    height: 55px;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 501;
+    letter-spacing: .02em;
+    cursor: pointer;
+    background-color: #ff1d29;
+    font-family: Helvetica, Arial, sans-serif
+}
+
+#optionA {
+    z-index: 1000;
+    position: absolute
+}
+
+#optionB {
+    z-index: -1000;
+    position: absolute
+}
+
+.unsubscribe {
+    color: #a0a0a0;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .2em;
+    font-size: 10px;
+    font-weight: 700;
+    position: relative
+}
+
+#perks {
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: left;
+    min-height: 150px;
+    max-height: 150px
+}
+
+#perkListCenter {
+    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    min-height: 40px
+}
+
+#perkCheck {
+    line-height: 22px;
+    margin: -2px 14px 0 14px
+}
+
+p {
+    margin: 10px 0
+}
